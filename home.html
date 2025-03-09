@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        .education-resources, .media-container {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .education-resources ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .education-resources ul li {
+            margin: 10px 0;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About This Website</h2>
+            <p>Explore various learning resources, videos, and educational content to enhance your knowledge.</p>
+        </section>
+
+        <section class="education-resources">
+            <h2>Educational Resources</h2>
+            <ul>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy - Free Courses</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera - Online Certifications</a></li>
+                <li><a href="https://www.edx.org/" target="_blank">edX - University-Level Courses</a></li>
+                <li><a href="https://ocw.mit.edu/" target="_blank">MIT OpenCourseWare</a></li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy - Learn Programming</a></li>
+            </ul>
+        </section>
+
+        <section class="media-container">
+            <div class="image-container">
+                <h2>Featured Image</h2>
+                <img src="images/wallpaper.jpg" alt="wallpaper">
+            </div>
+
+            <div class="video-container">
+                <h2>Featured Video</h2>
+                <a href="https://youtu.be/_jz2nC267Ik" target="_blank">Watch this video on YouTube</a>
+                <iframe 
+                    height="315" 
+                    src="https://www.youtube.com/embed/_jz2nC267Ik" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
